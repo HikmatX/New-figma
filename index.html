@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<script>document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav_links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav_active');
+    });
+});
+</script>
+<body>
+    <div class="wrapper">
+        <header>
+             <nav>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="logo_nav">
+                    <h1>BrandName</h1>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                </div>
+                <div class="navbar_buttons">
+                    <a href="#">Login</a>
+                    <button>JOIN US
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="#ffffff" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div id="home" class="header">
+                <div class="header_text">
+                    <h5>Welcome</h5>
+                    <h1>Selling on the internet like a pro</h1>
+                    <h4>We know how large objects will act, but things on a small scale just do not act that way.</h4>
+                    <div class="header_text_buttons">
+                        <button>Get Quote Now</button>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="header_boxes">
+                    <div class="box">
+                        <img src="./scss/images/face-icon.png" alt="icon">
+                        <h5>Market Analysis</h5>
+                        <div class="line"></div>
+                        <p>The gradual accumulation of
+                            information about atomic and
+                            small-scale behaviour...</p>
+                    </div>
+                    <div class="box">
+                        <img src="./scss/images/done-icon.png" alt="icon">
+                        <h5>Evaluation Time</h5>
+                        <div class="line"></div>
+                        <p>The gradual accumulation of
+                            information about atomic and
+                            small-scale behaviour...</p>
+                    </div>
+                    <div class="box">
+                        <img src="./scss/images/card-icon.png" alt="icon">
+                        <h5>2,769 online courses</h5>
+                        <div class="line"></div>
+                        <p>The gradual accumulation of
+                            information about atomic and
+                            small-scale behaviour...</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="Product" class="information_page">
+            <img src="./scss/images/children.png" alt="children_img">
+            <div class="text_information">
+                <div class="line_information"></div>
+                <h1>Packages that are aprodable</h1>
+                <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
+                    mechanics </p>
+                <a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24">
+                        <path fill="#23A6F0" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z" />
+                    </svg></a>
+            </div>
+        </div>
+        <div id="Pricing"  class="sales">
+            <div class="sales_text">
+                <h5>Practice Advice</h5>
+                <h1>Make online education accessible</h1>
+                <div class="paragraph">
+                    <p>Problems trying to resolve the conflict between</p>
+                    <p>the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+            </div>
+            <div class="sales_items">
+                <div class="items">
+                    <div class="images_items">
+                        <button>Sale</button>
+                        <div class="svg_items">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3m-4.4 15.55l-.1.1l-.1-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#F3CD03"
+                                    d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h7L18.627 5.5zm-.489-1h14.923l-4.167 7.616H8.1l-1.639 3h11.731v1H4.741l2.744-4.9L3.808 3.5H2v-1h2.442zm3.158 6.616h7z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M13.23 6.246c.166.207.258.476.258.754c0 .279-.092.547-.258.754C12.18 9.025 9.79 11.5 7 11.5c-2.79 0-5.18-2.475-6.23-3.746A1.208 1.208 0 0 1 .512 7c0-.278.092-.547.258-.754C1.82 4.975 4.21 2.5 7 2.5c2.79 0 5.18 2.475 6.23 3.746" />
+                                    <path d="M7 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                <div class="text_items">
+                        <div>
+                            <p>English</p>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <path fill="#FFCE31"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <p>4.9</p>
+                            </div>
+
+                        </div>
+                        <h4>Graphic Design</h4>
+                        <p class="text_items_textp_1">We focus on ergonomics
+                            and meeting you....</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256">
+                                <path fill="#737373"
+                                    d="M222 144v64a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6v-64a6 6 0 0 1 12 0v58h164v-58a6 6 0 0 1 12 0m-98.24 4.24a6 6 0 0 0 8.48 0l40-40a6 6 0 0 0-8.48-8.48L134 129.51V32a6 6 0 0 0-12 0v97.51L92.24 99.76a6 6 0 0 0-8.48 8.48Z" />
+                            </svg>15 Sales</p>
+                        <p>$16.48 <span>$6.48</span></p>
+                        <p  class="svg_paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>Pro...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 32 32">
+                                <path fill="#E77C40"
+                                    d="m30 6.614l-1.315.437A21 21 0 0 1 23 8c-1.734 0-3.322-.907-5.004-1.868C16.162 5.084 14.266 4 12 4C9.123 4 5.915 6.206 4 7.772V2H2v26a2.003 2.003 0 0 0 2 2h26ZM4 20.294C5.874 17.376 9.56 13 12 13c1.638 0 2.96 1.102 4.36 2.269C17.897 16.549 19.638 18 22 18a9.47 9.47 0 0 0 6-2.529v4.956A13 13 0 0 1 22 22a13.9 13.9 0 0 1-4.684-.949A15.7 15.7 0 0 0 12 20c-2.927 0-6.068 2.959-8 5.158ZM12 6c1.734 0 3.323.907 5.004 1.868C18.838 8.916 20.734 10 23 10a21.4 21.4 0 0 0 5-.678v3.321c-.683.803-3.084 3.357-6 3.357c-1.638 0-2.96-1.102-4.36-2.269C16.103 12.451 14.362 11 12 11c-2.936 0-6.063 3.34-8 5.845v-6.421C5.546 8.966 9.259 6 12 6M4.249 28C5.862 25.909 9.41 22 12 22a13.9 13.9 0 0 1 4.684.949A15.7 15.7 0 0 0 22 24a14.7 14.7 0 0 0 6-1.34V28Z" />
+                            </svg>64 Les...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>22hr..</p>
+                            <button>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#23A6F0" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"/></svg></button>
+                </div>
+                </div>
+                <div class="items">
+                    <div class="images_items-2">
+                        <button>Sale</button>
+                        <div class="svg_items">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3m-4.4 15.55l-.1.1l-.1-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#888888"
+                                    d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h7L18.627 5.5zm-.489-1h14.923l-4.167 7.616H8.1l-1.639 3h11.731v1H4.741l2.744-4.9L3.808 3.5H2v-1h2.442zm3.158 6.616h7z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M13.23 6.246c.166.207.258.476.258.754c0 .279-.092.547-.258.754C12.18 9.025 9.79 11.5 7 11.5c-2.79 0-5.18-2.475-6.23-3.746A1.208 1.208 0 0 1 .512 7c0-.278.092-.547.258-.754C1.82 4.975 4.21 2.5 7 2.5c2.79 0 5.18 2.475 6.23 3.746" />
+                                    <path d="M7 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                <div class="text_items">
+                        <div>
+                            <p>English</p>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <path fill="#FFCE31"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <p>4.9</p>
+                            </div>
+
+                        </div>
+                        <h4>Graphic Design</h4>
+                        <p class="text_items_textp_1">We focus on ergonomics
+                            and meeting you....</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256">
+                                <path fill="#737373"
+                                    d="M222 144v64a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6v-64a6 6 0 0 1 12 0v58h164v-58a6 6 0 0 1 12 0m-98.24 4.24a6 6 0 0 0 8.48 0l40-40a6 6 0 0 0-8.48-8.48L134 129.51V32a6 6 0 0 0-12 0v97.51L92.24 99.76a6 6 0 0 0-8.48 8.48Z" />
+                            </svg>15 Sales</p>
+                        <p>$16.48 <span>$6.48</span></p>
+                        <p  class="svg_paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>Pro...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 32 32">
+                                <path fill="#E77C40"
+                                    d="m30 6.614l-1.315.437A21 21 0 0 1 23 8c-1.734 0-3.322-.907-5.004-1.868C16.162 5.084 14.266 4 12 4C9.123 4 5.915 6.206 4 7.772V2H2v26a2.003 2.003 0 0 0 2 2h26ZM4 20.294C5.874 17.376 9.56 13 12 13c1.638 0 2.96 1.102 4.36 2.269C17.897 16.549 19.638 18 22 18a9.47 9.47 0 0 0 6-2.529v4.956A13 13 0 0 1 22 22a13.9 13.9 0 0 1-4.684-.949A15.7 15.7 0 0 0 12 20c-2.927 0-6.068 2.959-8 5.158ZM12 6c1.734 0 3.323.907 5.004 1.868C18.838 8.916 20.734 10 23 10a21.4 21.4 0 0 0 5-.678v3.321c-.683.803-3.084 3.357-6 3.357c-1.638 0-2.96-1.102-4.36-2.269C16.103 12.451 14.362 11 12 11c-2.936 0-6.063 3.34-8 5.845v-6.421C5.546 8.966 9.259 6 12 6M4.249 28C5.862 25.909 9.41 22 12 22a13.9 13.9 0 0 1 4.684.949A15.7 15.7 0 0 0 22 24a14.7 14.7 0 0 0 6-1.34V28Z" />
+                            </svg>64 Les...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>22hr..</p>
+                            <button>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#23A6F0" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"/></svg></button>
+                </div>
+                </div>
+                <div class="items">
+                    <div class="images_items-3">
+                        <button>Sale</button>
+                        <div class="svg_items">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3m-4.4 15.55l-.1.1l-.1-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#888888"
+                                    d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h7L18.627 5.5zm-.489-1h14.923l-4.167 7.616H8.1l-1.639 3h11.731v1H4.741l2.744-4.9L3.808 3.5H2v-1h2.442zm3.158 6.616h7z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M13.23 6.246c.166.207.258.476.258.754c0 .279-.092.547-.258.754C12.18 9.025 9.79 11.5 7 11.5c-2.79 0-5.18-2.475-6.23-3.746A1.208 1.208 0 0 1 .512 7c0-.278.092-.547.258-.754C1.82 4.975 4.21 2.5 7 2.5c2.79 0 5.18 2.475 6.23 3.746" />
+                                    <path d="M7 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                <div class="text_items">
+                        <div>
+                            <p>English</p>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <path fill="#FFCE31"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <p>4.9</p>
+                            </div>
+
+                        </div>
+                        <h4>Graphic Design</h4>
+                        <p class="text_items_textp_1">We focus on ergonomics
+                            and meeting you....</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256">
+                                <path fill="#737373"
+                                    d="M222 144v64a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6v-64a6 6 0 0 1 12 0v58h164v-58a6 6 0 0 1 12 0m-98.24 4.24a6 6 0 0 0 8.48 0l40-40a6 6 0 0 0-8.48-8.48L134 129.51V32a6 6 0 0 0-12 0v97.51L92.24 99.76a6 6 0 0 0-8.48 8.48Z" />
+                            </svg>15 Sales</p>
+                        <p>$16.48 <span>$6.48</span></p>
+                        <p  class="svg_paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>Pro...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 32 32">
+                                <path fill="#E77C40"
+                                    d="m30 6.614l-1.315.437A21 21 0 0 1 23 8c-1.734 0-3.322-.907-5.004-1.868C16.162 5.084 14.266 4 12 4C9.123 4 5.915 6.206 4 7.772V2H2v26a2.003 2.003 0 0 0 2 2h26ZM4 20.294C5.874 17.376 9.56 13 12 13c1.638 0 2.96 1.102 4.36 2.269C17.897 16.549 19.638 18 22 18a9.47 9.47 0 0 0 6-2.529v4.956A13 13 0 0 1 22 22a13.9 13.9 0 0 1-4.684-.949A15.7 15.7 0 0 0 12 20c-2.927 0-6.068 2.959-8 5.158ZM12 6c1.734 0 3.323.907 5.004 1.868C18.838 8.916 20.734 10 23 10a21.4 21.4 0 0 0 5-.678v3.321c-.683.803-3.084 3.357-6 3.357c-1.638 0-2.96-1.102-4.36-2.269C16.103 12.451 14.362 11 12 11c-2.936 0-6.063 3.34-8 5.845v-6.421C5.546 8.966 9.259 6 12 6M4.249 28C5.862 25.909 9.41 22 12 22a13.9 13.9 0 0 1 4.684.949A15.7 15.7 0 0 0 22 24a14.7 14.7 0 0 0 6-1.34V28Z" />
+                            </svg>64 Les...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>22hr..</p>
+                            <button>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#23A6F0" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"/></svg></button>
+                </div>
+                </div>
+                <div class="items">
+                    <div class="images_items-4">
+                        <button>Sale</button>
+                        <div class="svg_items">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3m-4.4 15.55l-.1.1l-.1-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#888888"
+                                    d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h7L18.627 5.5zm-.489-1h14.923l-4.167 7.616H8.1l-1.639 3h11.731v1H4.741l2.744-4.9L3.808 3.5H2v-1h2.442zm3.158 6.616h7z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M13.23 6.246c.166.207.258.476.258.754c0 .279-.092.547-.258.754C12.18 9.025 9.79 11.5 7 11.5c-2.79 0-5.18-2.475-6.23-3.746A1.208 1.208 0 0 1 .512 7c0-.278.092-.547.258-.754C1.82 4.975 4.21 2.5 7 2.5c2.79 0 5.18 2.475 6.23 3.746" />
+                                    <path d="M7 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                <div class="text_items">
+                        <div>
+                            <p>English</p>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <path fill="#FFCE31"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <p>4.9</p>
+                            </div>
+
+                        </div>
+                        <h4>Graphic Design</h4>
+                        <p class="text_items_textp_1">We focus on ergonomics
+                            and meeting you....</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256">
+                                <path fill="#737373"
+                                    d="M222 144v64a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6v-64a6 6 0 0 1 12 0v58h164v-58a6 6 0 0 1 12 0m-98.24 4.24a6 6 0 0 0 8.48 0l40-40a6 6 0 0 0-8.48-8.48L134 129.51V32a6 6 0 0 0-12 0v97.51L92.24 99.76a6 6 0 0 0-8.48 8.48Z" />
+                            </svg>15 Sales</p>
+                        <p>$16.48 <span>$6.48</span></p>
+                        <p  class="svg_paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>Pro...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 32 32">
+                                <path fill="#E77C40"
+                                    d="m30 6.614l-1.315.437A21 21 0 0 1 23 8c-1.734 0-3.322-.907-5.004-1.868C16.162 5.084 14.266 4 12 4C9.123 4 5.915 6.206 4 7.772V2H2v26a2.003 2.003 0 0 0 2 2h26ZM4 20.294C5.874 17.376 9.56 13 12 13c1.638 0 2.96 1.102 4.36 2.269C17.897 16.549 19.638 18 22 18a9.47 9.47 0 0 0 6-2.529v4.956A13 13 0 0 1 22 22a13.9 13.9 0 0 1-4.684-.949A15.7 15.7 0 0 0 12 20c-2.927 0-6.068 2.959-8 5.158ZM12 6c1.734 0 3.323.907 5.004 1.868C18.838 8.916 20.734 10 23 10a21.4 21.4 0 0 0 5-.678v3.321c-.683.803-3.084 3.357-6 3.357c-1.638 0-2.96-1.102-4.36-2.269C16.103 12.451 14.362 11 12 11c-2.936 0-6.063 3.34-8 5.845v-6.421C5.546 8.966 9.259 6 12 6M4.249 28C5.862 25.909 9.41 22 12 22a13.9 13.9 0 0 1 4.684.949A15.7 15.7 0 0 0 22 24a14.7 14.7 0 0 0 6-1.34V28Z" />
+                            </svg>64 Les...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24">
+                                <path fill="#23A6F0"
+                                    d="M12.5 8H11v6l4.75 2.85l.75-1.23l-4-2.37zm4.837-6.19l4.607 3.845l-1.28 1.535l-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4a9 9 0 1 0 .001 18.001A9 9 0 0 0 12 4m0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7" />
+                            </svg>22hr..</p>
+                            <button>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#23A6F0" d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"/></svg></button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="comment_text">
+                <h5>Practice Advice</h5>
+                <h1>Each and every client is important.</h1>
+                <div class="paragraph">
+                    <p>Problems trying to resolve the conflict between </p>
+                    <p>the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+            </div>
+            <div class="comment_items">
+                <div class="items_comment">
+                    <div class="comment_img"></div>
+                    <div class="comment_items_text">
+                        <p>Slate helps you see how many more days 
+                            you need to work to reach your financial 
+                            goal for the month and year.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="M9.6 15.65L12 13.8l2.4 1.85l-.9-3.05l2.25-1.6h-2.8L12 7.9l-.95 3.1h-2.8l2.25 1.6zm2.4.65l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213zm0-4.525"/></svg></p>
+                            <h3>Regina Miles</h3>
+                            <h4>Designer</h4>
+                    </div>
+                </div>
+                <div class="items_comment">
+                    <div class="comment_img-2"></div>
+                    <div class="comment_items_text">
+                        <p>Slate helps you see how many more days 
+                            you need to work to reach your financial 
+                            goal for the month and year.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="m12 16.3l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#F3CD03" d="M9.6 15.65L12 13.8l2.4 1.85l-.9-3.05l2.25-1.6h-2.8L12 7.9l-.95 3.1h-2.8l2.25 1.6zm2.4.65l-3.7 2.825q-.275.225-.6.213t-.575-.188t-.387-.475t-.013-.65L8.15 13.4l-3.625-2.575q-.3-.2-.375-.525t.025-.6t.35-.488t.6-.212H9.6l1.45-4.8q.125-.35.388-.538T12 3.475t.563.188t.387.537L14.4 9h4.475q.35 0 .6.213t.35.487t.025.6t-.375.525L15.85 13.4l1.425 4.625q.125.35-.012.65t-.388.475t-.575.188t-.6-.213zm0-4.525"/></svg></p>
+                            <h3>Regina Miles</h3>
+                            <h4>Designer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Contact" class="contact">
+            <div class="contact_text">
+                <h5>Practice Advice</h5>
+                <h1> Featured Products</h1>
+                <div class="paragraph">
+                    <p>Problems trying to resolve the conflict between</p>
+                    <p>the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+            </div>
+            <div class="input_page_contact">
+                <input type="email" placeholder="Your Email"><button>Subscribe</button>
+            </div>
+            <div class="navbar_footer">
+                <div class="icons_footer">
+                    <h3>Get In Touch</h3>
+                    <p>the quick fox jumps over the lazy dog</p>
+                    <div class="footer_icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#23A6F0" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path fill="#23A6F0" d="M16 0c-4.349 0-4.891.021-6.593.093c-1.709.084-2.865.349-3.885.745a7.847 7.847 0 0 0-2.833 1.849A7.757 7.757 0 0 0 .84 5.52C.444 6.54.179 7.696.095 9.405c-.077 1.703-.093 2.244-.093 6.593s.021 4.891.093 6.593c.084 1.704.349 2.865.745 3.885a7.847 7.847 0 0 0 1.849 2.833a7.757 7.757 0 0 0 2.833 1.849c1.02.391 2.181.661 3.885.745c1.703.077 2.244.093 6.593.093s4.891-.021 6.593-.093c1.704-.084 2.865-.355 3.885-.745a7.847 7.847 0 0 0 2.833-1.849a7.716 7.716 0 0 0 1.849-2.833c.391-1.02.661-2.181.745-3.885c.077-1.703.093-2.244.093-6.593s-.021-4.891-.093-6.593c-.084-1.704-.355-2.871-.745-3.885a7.847 7.847 0 0 0-1.849-2.833A7.716 7.716 0 0 0 26.478.838c-1.02-.396-2.181-.661-3.885-.745C20.89.016 20.349 0 16 0m0 2.88c4.271 0 4.781.021 6.469.093c1.557.073 2.405.333 2.968.553a4.989 4.989 0 0 1 1.844 1.197a4.931 4.931 0 0 1 1.192 1.839c.22.563.48 1.411.553 2.968c.072 1.688.093 2.199.093 6.469s-.021 4.781-.099 6.469c-.084 1.557-.344 2.405-.563 2.968c-.303.751-.641 1.276-1.199 1.844a5.048 5.048 0 0 1-1.844 1.192c-.556.22-1.416.48-2.979.553c-1.697.072-2.197.093-6.479.093s-4.781-.021-6.48-.099c-1.557-.084-2.416-.344-2.979-.563c-.76-.303-1.281-.641-1.839-1.199c-.563-.563-.921-1.099-1.197-1.844c-.224-.556-.48-1.416-.563-2.979c-.057-1.677-.084-2.197-.084-6.459c0-4.26.027-4.781.084-6.479c.083-1.563.339-2.421.563-2.979c.276-.761.635-1.281 1.197-1.844c.557-.557 1.079-.917 1.839-1.199c.563-.219 1.401-.479 2.964-.557c1.697-.061 2.197-.083 6.473-.083zm0 4.907A8.21 8.21 0 0 0 7.787 16A8.21 8.21 0 0 0 16 24.213A8.21 8.21 0 0 0 24.213 16A8.21 8.21 0 0 0 16 7.787m0 13.546c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333S18.948 21.333 16 21.333M26.464 7.459a1.923 1.923 0 0 1-1.923 1.921a1.919 1.919 0 1 1 0-3.838c1.057 0 1.923.86 1.923 1.917"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#23A6F0" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
+                    </div>
+                </div>
+                <ul>
+                    <h3>Company info</h3>
+                    <li>About Us</li>
+                    <li>Carrier</li>
+                    <li>We are hiring</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <h3>Features</h3>
+                    <li>Business Marketing</li>
+                    <li>User Analytic</li>
+                    <li>Live Chat</li>
+                    <li>Unlimited Support</li>
+                </ul>
+                <ul>
+                    <li>IOS & Android</li>
+                    <li>Watch a Demo</li>
+                    <li>Customers</li>
+                    <li>API</li>
+                </ul>
+               </div>
+        </div>
+        <footer>
+
+           <div class="end_page">
+            <p>Made With Love By Figmaland All Right Reserved </p>
+           </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
